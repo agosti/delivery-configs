@@ -30,7 +30,7 @@ spring:
         password: 123456
         platform: postgres
         schema: classpath:/sql/schema.sql
-        url: jdbc:postgresql://localhost:5433/nfedb
+        url: jdbc:postgresql://localhost:5433/delivery
         username: postgres
     jpa:
         database-platform: org.hibernate.dialect.PostgreSQLDialect
