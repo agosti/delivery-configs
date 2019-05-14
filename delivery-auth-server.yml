@@ -33,8 +33,16 @@ spring:
         url: jdbc:postgresql://localhost:5433/delivery
         username: postgres
     jpa:
-        database-platform: org.hibernate.dialect.PostgreSQLDialect
-        generate-ddl: false
+        database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+        generate-ddl: true
         hibernate:
-        ddl-auto: none
+        ddl-auto: update
         show-sql: true
+        properties:
+            hibernate:
+              temp:
+                use_jdbc_metadata_defaults: false
+              jdbc:
+                lob:
+                  non_contextual_creation: true      
+
