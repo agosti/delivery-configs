@@ -36,5 +36,5 @@ spring:
         database-platform: org.hibernate.dialect.PostgreSQL9Dialect
         generate-ddl: false
         hibernate:
-        ddl-auto: none
+          ddl-auto: none
         show-sql: true
